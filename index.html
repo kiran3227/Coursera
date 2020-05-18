@@ -5,11 +5,79 @@
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <style>
-    
+            * {
+                box-sizing:border-box;
+                margin:0;
+                padding:0;
+            }
+            @media only screen and (min-width:992px) {
+                div > div {
+                    width:30.2%;
+                }
+            }
+            @media only screen and (min-width:768px) and (max-width:991px) {
+                div > div {
+                    width:46%;
+                }
+                div div:last-child {
+                    width:96%;
+                }     
+            }
+            @media only screen and (max-width:768px) {
+                div > div {
+                    width:96%;
+                }
+            }
+            h1 {
+                text-align:center;
+                font: 45px monospace;
+                color:brown;
+            }
+            div > div {
+                position:relative;
+                background-color:lightblue;
+                border:1px solid black;
+                float:left;
+                margin:15px;
+            }
+            h2 {
+                background-color:gray;
+                border:1px solid black;
+                float:right;
+                top:-1px;
+                right:0;
+            }
+            div > p{
+                clear:both; 
+                padding:15px;
+                font-size:17px;
+            }
+            #first {
+                background-color:darkkhaki;
+            }
+            #second {
+                background-color:aquamarine;
+            }
+            #third {
+                background-color:chartreuse;
+            }
         </style>
     </head>
     <body>
-
         <h1>Great Thoughts</h1>
+        <div>
+            <div>
+                <h2 id='first'> Og Mandingo</h2>
+                <p><q>Beginning today, treat everyone you meet as if they were going to be dead by midnight. Extend to them all the care, kindness and understanding you can muster, and do it with no thought of any reward. Your life will never be the same again.</q></p>
+            </div>
+            <div>
+                <h2 id='second'>Richard Dawkins</h2>
+                <p><q>Let us try to teach generosity and altruism, because we are born selfish. Let us understand what our own selfish genes are up to, because we may then at least have the chance to upset their designs, something that no other species has ever aspired to do.</q></p>
+            </div>
+            <div>
+                <h2 id='third'> Wayne Dyer</h2>
+                <p><q>When you are able to shift your inner awareness to how you can serve others, and when you make this the central focus of your life, you will then be in a position to know true miracles in your progress toward prosperity.</q></p>
+            </div>
+        </div>
     </body>
 </html>
